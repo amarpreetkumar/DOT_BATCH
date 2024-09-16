@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list table forms</title>
+</head>
+
+<body>
+    <!--example of unordered list-->
+    <ul type="circle"> <!--styling but not good ,do it with css-->
+        <li>home</li>
+        <li>About</li>
+        <li>service</li>
+        <li>contact us</li>
+
+    </ul>
+
+    <!--TAG  OF ORDERED LIST IS <OL> -->
+    <ol>
+        <li>home</li>
+        <li>About</li>
+        <li>service</li>
+        <li>contact us</li>
+
+    </ol>
+    <!--table-->
+    <div>
+        <table>
+            <tr> <!--used to display table row-->
+                <caption><b>*****<mark>SCORECARD</mark>*****</b></caption> <!--used to display heading-->
+                <th colspan="1">s.no</th> <!--used to make table heading-->
+                <th colspan="1">player name</th> <!--used to make table heading-->
+
+                <!--<th>player name</th> <!--colspan is used to make a heading for number of data row.-->
+                <th>max score</th>
+                <th>country</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td rowspan="1">sachin</td>
+                <td>200</td>
+                <td>india</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>kohli</td>
+                <td>100</td>
+                <td>india</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>dhoni</td>
+                <td>300</td>
+                <td>india</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>rohit</td>
+                <td>264</td>
+                <td>india</td>
+            </tr>
+
+
+
+        </table>
+    </div>
+
+    <div>
+        <!--form is used to create form
+        input element:can be if text,checkbox,radio,
+        button and submit.
+        textarea elemnt: define a multilive text input
+        ,cols and row attribute can  be used to size the textarea.
+         select elemnent: defines a drop down list,
+        -->
+        <h1>travel for you....</h1>
+        <hr>
+        <form action="form.php">
+            <input type="text" placeholder="enter your name"><br>
+            <label for="section id a">
+                <input type="radio" value="section a" name="section" id="section id a"> section a
+            </label>
+            <label for="section id b">
+                <input type="radio" value="section b" name="section" id="section id b"> section b
+            </label>
+            <label for="section id c">
+                <input type="radio" value="section c" name="section" id="section id c"> section c
+            </label>
+            <br> 
+            <input type="checkbox" id="food canteen" class="red" name="canteen">
+            <label for="food canteen">want food canteen</label><br>
+            <textarea name="explain" id="explain" cols="30" rows="10"
+                placeholder="explain why you want to join"></textarea>
+            <br>
+            <select name="car" id="car">
+                <option value="no car">select your car</option>
+                <option value="dezire">dezire</option>
+                <option value="alto">alto</option>
+                <option value="bike">bike</option>
+                <option value="bmw">bmw</option>
+                <option value="nano">nano</option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>

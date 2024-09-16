@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(153, 250, 17);
+    color: white;
+}
+p{
+    color: black;
+    font-size: 22px;
+    text-decoration: underline;
+    text-decoration-color: rgb(241, 90, 15);
+}
